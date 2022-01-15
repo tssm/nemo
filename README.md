@@ -1,14 +1,6 @@
-**This repository has been superseded by [vimspectr](https://github.com/haystackandroid/vimspectr).**
-
-.
-
-.
-
-.
-
 <h1 id="nemo">nemo</h1>
 
-<p>A vim theme inspired by the <a href="https://zambumon.github.io/projects/nautilus">Nautilus keycap set</a> by Zambumon.</p>
+<p>A vim theme inspired by the <a href="https://zambumon.github.io/projects/nautilus">Nautilus keycap set</a> by Zambumon. It depends on the value of `background` unlike the original one.</p>
 
 <h2 id="screenshots">screenshots</h2>
 
@@ -24,59 +16,21 @@
   <p>pictured font: <a href="http://input.fontbureau.com/">Input Mono Narrow</a> (1.2x line spacing)</p>
 </blockquote>
 
-<h2 id="setup">setup</h2>
-
-<h3 id="installation">installation</h3>
-
-<p>While vim themes can be installed manually (place <a href="https://github.com/haystackandroid/nemo/tree/master/colors">theme file</a> in <code class="highlighter-rouge">~/.vim/colors/</code>), a <strong>plugin helper</strong> is recommended.</p>
-
-<p>If you don’t have a preferred helper, consider trying <a href="https://github.com/junegunn/vim-plug">vim-plug</a>, which can be installed with:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-</code></pre></div></div>
-
-<p>To install nemo using vim-plug, add the following to the top of your <code class="highlighter-rouge">vimrc</code>:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>call plug#begin('~/.vim/plugged')
-Plug 'haystackandroid/nemo'
-call plug#end()
-</code></pre></div></div>
-
-<p>Then restart vim and run <code class="highlighter-rouge">PlugUpdate</code> (from the vim command line).</p>
-
-<h3 id="activation">activation</h3>
-
-<p>To activate the nemo theme, add one of the following lines to your <code class="highlighter-rouge">vimrc</code>:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">colorscheme nemo-light</code></li>
-  <li><code class="highlighter-rouge">colorscheme nemo-dark</code></li>
-</ul>
-
-<blockquote>
-  <p>To assign themes to specific intervals of the day, try the <a href="https://github.com/haystackandroid/night-and-day">night-and-day</a> plugin.</p>
-</blockquote>
-
-<h3 id="options">options</h3>
+<h2 id="options">options</h2>
 
 <p>You can tweak the following options by adding lines to your `vimrc’.</p>
 
 <p>Disable highlighted <strong>current line number</strong>:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let g:nemo_dark_CursorLineNr = 'off'
-let g:nemo_light_CursorLineNr = 'off'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let g:nemoCursorLineNr = 'off'
+let g:nemoCursorLineNr = 'off'
 </code></pre></div></div>
 
 <p>Disable the highlighted <strong>line number background</strong>:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let g:nemo_dark_LineNr = 'off'
-let g:nemo_light_LineNr = 'off'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let g:nemoLineNr = 'off'
+let g:nemoLineNr = 'off'
 </code></pre></div></div>
-
-<h2 id="terminal-vim">terminal vim</h2>
-
-<p>See the <a href="https://github.com/haystackandroid/nightshell">nightshell</a> repository, which allows nemo to be used in a variety of terminal applications.</p>
 
 <h2 id="palette">palette</h2>
 
@@ -165,3 +119,5 @@ let g:nemo_light_LineNr = 'off'
 
 <p><img src="http://www.colorhexa.com/d46a84.png" height="24" width="42" />
 <strong>Pink</strong>, the colour of spring blossoms, is used for <strong>object names</strong>, including the names of variables and functions. To code is to bring countless objects blossoming into life as one types their names.</p>
+
+
